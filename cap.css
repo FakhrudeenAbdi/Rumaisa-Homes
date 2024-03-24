@@ -1,0 +1,185 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.gid-item1 {
+  background-color: white;
+  padding: 10px;
+
+}
+
+.grid-item2 {
+  background-color: white;
+  padding: 10px;
+}
+
+
+
+.grid-item {
+  background-color: antiquewhite;
+  padding: 10px;
+}
+/* .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.nav {
+  justify-self: end;
+} */
+
+.grid-container2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  background-color: white;
+}
+
+.grid-item2 {
+  background-color: white;
+  padding: 10px;
+}
+
+.grid-item3 {}
+
+.grid-item4 {
+  background-color: #021108;
+}
+
+.container3 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  background-color: antiquewhite;
+  padding: 20px;
+
+
+
+
+
+
+
+}
+
+.container4 {
+  display: flex;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 40px;
+  background-color:#052712;
+  color: white;
+  padding: 100px;
+  
+
+}
+
+/* .grid{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 10px;
+} */
+
+
+
+.nav {
+  width: 100%;
+  margin-left: 700px;
+  justify-content: space-between;
+
+  /* float: left; */
+  text-align: right;
+  margin-bottom: 0%;
+  justify-content: space-between;
+  display: flex;
+
+
+}
+
+.nav a{
+  color: #14542c;
+  
+
+}
+
+.col1 {
+  text-align: left;
+
+}
+
+.grid-container5 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  background-color: aliceblue;
+
+
+}
+
+.p {
+  color: #14542c;
+
+  font-size: larger;
+
+}
+
+.p4 {
+  color: #54595F;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+}
+
+.VP-button {
+  color: white;
+  background-color: #021108;
+  font-size: larger;
+  text-align: right;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.p2 {
+  border-color: #14542c;
+  color: #14542c;
+  background-color: white;
+  border-style: solid;
+  padding: 10px;
+  height: 40px;
+  width: 150px;
+
+}
+
+/* #video-container {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+#background-video {
+  width: 100%;
+  height: auto;
+} */
+.subscribe-button {
+  color: white;
+  background: #e0b44c;
+  border: solid;
+  font-size: smaller;
+  padding: 10px;
+  cursor: pointer;
+
+
+}
+.ul{
+  list-style-type: none;
+}
+
+.grid-container5{
+  background-color: #021108;
+}
+.col2{
+  color: white;
+}
