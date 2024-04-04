@@ -42,7 +42,9 @@
   padding: 10px;
 }
 
-.grid-item3 {}
+/* .grid-item3 {
+
+} */
 
 .grid-item4 {
   background-color: #021108;
@@ -182,4 +184,37 @@
 }
 .col2{
   color: white;
+}
+.fa-twitter {
+  color:white; 
+  font-size: 24px; 
+}
+.fa-instagram {
+  color: white; 
+    font-size: 24px; 
+}
+.fa-facebook{
+  color: white; 
+  font-size: 24px; 
+}
+.fa-youtube{
+  color: white; 
+  font-size: 24px; 
+
+}
+.container6{
+  background-color:#052712;
+  padding: 10px;
+}
+
+
+@media(min-width:768px){
+  .container{
+    margin:5px auto 0;
+    padding:4px;
+    border-radius: 2px;
+  }
+  img{
+    border-radius: 2px;
+  }
 }
