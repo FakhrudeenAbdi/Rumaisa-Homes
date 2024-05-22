@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="cap.css">
+  <title>House Listings</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: white;
+      color: #333;
+    }
+
+    main {
+      padding: 20px 0;
+    }
+
+    section {
+      background-color: #f8f9fa;
+      color: #333;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .post-form {
+      border: 1px solid #ccc;
+      padding: 20px;
+    }
+
+    .post-form h2 {
+      margin-top: 0;
+    }
+
+    .post-form label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .post-form input,
+    .post-form textarea {
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .post-form button {
+      background-color: blue;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .listings {
+      border: 1px solid #ccc;
+      padding: 20px;
+    }
+
+    .listings h2 {
+      margin-top: 0;
+    }
+
+    .listings ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .listings li {
+      border-bottom: 1px solid #ccc;
+      padding: 10px 0;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    footer a {
+      color: #fff;
+    }
+
+    footer a:hover {
+      color: #ddd;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light padding-80px">
+    <div class="container-fluid">
+      <img src="Rumaisa Home Logo.jpg" width="150px">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="http://127.0.0.1:5500/home2.html#">HOME</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="http://127.0.0.1:5500/insights2.html?">INSIGHTS</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              DEVELOPMENTS
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="http://127.0.0.1:5500/zuri2.html">ZURI</a></li>
+              <li><a class="dropdown-item" href="http://127.0.0.1:5500/meraki2.html">MERAKI</a></li>
+              <li><a class="dropdown-item" href="http://127.0.0.1:5500/trial.html">ALMONDS</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://127.0.0.1:5500/contact2.html">CONTACT US</a>
+          </li>
+          <li class="nav-item">
+            <a href="http://127.0.0.1:5500/enquire.html"><button class="btn btn-outline-primary">Enquire</button></a>
+            <!-- <button  class="btn btn-outline-primary">ENQUIRE</button> -->
+          </li>
+          <li class="nav-item">
+            <!-- <button class="btn btn-outline-secondary">BECOME AN AGENT</button> -->
+            <a href="http://127.0.0.1:5500/listing2.html"><button class="btn btn-outline-secondary">BECOME AN AGENT</button></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <header class="bg-light text-dark py-4 text-center">
+    <h1>Post Your House for Sale</h1>
+  </header>
+
+  <main class="container my-5">
+    <div class="row">
+      <section class="col-md-6 post-form">
+        <h2>Submit Your House Details</h2>
+        <form id="house-form">
+          <label for="title">Title:</label>
+          <input type="text" id="title" name="title" class="form-control" required>
+
+          <label for="description">Description:</label>
+          <textarea id="description" name="description" class="form-control" required></textarea>
+
+          <label for="price">Price:</label>
+          <input type="number" id="price" name="price" class="form-control" required>
+
+          <label for="location">Location:</label>
+          <input type="text" id="location" name="location" class="form-control" required>
+
+          <button type="submit" class="btn btn-primary mt-3">Submit</button>
+        </form>
+      </section>
+
+      <section class="col-md-6 listings">
+        <h2>Current House Listings</h2>
+        <ul id="listings-container">
+
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-light py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5>RUMAISA HOMES</h5>
+          <p>Suite 38b, 4th Floor, Nextgen Mall<br>
+            Mombasa Rd, Nairobi, KE<br>
+            +254 11 1213333 / +254 11 426 8811<br>
+            <a href="mailto:info@rumaisahomes.co.ke" class="text-light">info@rumaisahomes.co.ke</a>
+          </p>
+        </div>
+        <div class="col-md-4">
+          <h5>EXPLORE</h5>
+          <ul class="list-unstyled">
+            <li><a href="" class="text-light">78platinumresidency</a></li>
+            <li><a href="http://127.0.0.1:5500/zuri2.html" class="text-light">Zuri</a></li>
+            <li><a href="http://127.0.0.1:5500/meraki2.html" class="text-light">Meraki</a></li>
+            <li><a href="http://127.0.0.1:5500/trial.html" class="text-light">The Almonds</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Help & Support</h5>
+          <ul class="list-unstyled">
+            <li>Terms of Service</li>
+            <li>Privacy Policy</li>
+            <li>Cookie Notices</li>
+            <li><a href="http://127.0.0.1:5500/contact2.html" class="text-light">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-md-6">
+          <p class="mb-0">&copy; 2023 Rumaisa Homes. Developed by <a href="https:/fakhrudeen.com/" class="text-light">Fakhrudeen</a></p>
+        </div>
+        <div class="col-md-6 text-end">
+          <a href="#" class="text-light me-2"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-light me-2"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="text-light me-2"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="text-light"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const form = document.getElementById('house-form');
+      const listingsContainer = document.getElementById('listings-container');
+
+      form.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        const title = form.title.value;
+        const description = form.description.value;
+        const price = form.price.value;
+        const location = form.location.value;
+
+        // Create listing element
+        const listing = document.createElement('li');
+        listing.innerHTML = `<strong>${title}</strong> - ${description}<br>Price: ${price}, Location: ${location}`;
+
+        // Append listing to container
+        listingsContainer.appendChild(listing);
+
+        // Clear form fields
+        form.reset();
+      });
+    });
+  </script>
+</body>
+
+</html>

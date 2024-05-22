@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <title>Almonds</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      margin-bottom: 20px;
+    }
+
+    .container img {
+      margin-bottom: 20px;
+    }
+
+    .content {
+      margin-bottom: 20px;
+    }
+
+    .content h4 {
+      margin-top: 20px;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    .content p, .content ul {
+      font-size: 16px;
+    }
+
+    .content ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .content ul li::before {
+      content: "\2022";
+      color: #007bff;
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+    }
+
+    #contactForm {
+      background: #f8f9fa;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    #contactForm label {
+      font-weight: bold;
+    }
+
+    #contactForm input, #contactForm textarea {
+      margin-bottom: 10px;
+    }
+
+    .container4 {
+      display: flex;
+      justify-content: space-between;
+      background: #343a40;
+      color: white;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .container4 .col {
+      flex: 1;
+    }
+
+    .container4 .ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .container4 .ul li {
+      margin-bottom: 10px;
+    }
+
+    .container4 .link a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .grid-container5 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+    }
+
+    .col1 {
+      flex: 1;
+    }
+
+    .col2 {
+      flex: 2;
+      text-align: center;
+    }
+
+    .col2 a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .col i {
+      color: #007bff;
+    }
+
+    @media (max-width: 768px) {
+      .container4 {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .grid-container5 {
+        flex-direction: column;
+      }
+
+      .col2 {
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light padding-80px">
+    <div class="container-fluid">
+      <img src="Rumaisa Home Logo.jpg" width="150px">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="http://127.0.0.1:5500/home2.html#">HOME</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="http://127.0.0.1:5500/insights2.html?">INSIGHTS</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              DEVELOPMENTS
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="http://127.0.0.1:5500/zuri2.html">ZURI</a></li>
+              <li><a class="dropdown-item" href="http://127.0.0.1:5500/meraki2.html">MERAKI</a></li>
+              <li><a class="dropdown-item" href="http://127.0.0.1:5500/trial.html">ALMONDS</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://127.0.0.1:5500/contact2.html">CONTACT US</a>
+          </li>
+          <li class="nav-item">
+            <a href="http://127.0.0.1:5500/enquire.html"><button class="btn btn-outline-primary">Enquire</button></a>
+            <!-- <button  class="btn btn-outline-primary">ENQUIRE</button> -->
+          </li>
+          <li class="nav-item">
+            <!-- <button class="btn btn-outline-secondary">BECOME AN AGENT</button> -->
+            <a href="http://127.0.0.1:5500/listing2.html"><button class="btn btn-outline-secondary">BECOME AN AGENT</button></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <img src="image21.png" class="img-fluid" alt="Almonds Image 1">
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="image22.png" class="img-fluid" alt="Almonds Image 2">
+      </div>
+      <div class="col-md-6 content">
+        <p>THE ALMONDS is a visionary masterpiece nestled in the heart of SOUTH C, the new lifestyle hub of Nairobi. The
+          project boasts a selection of 3 & 4-bedroom residences. Launched in December 2021, The project was completed
+          and handed over to new homeowners in August 2023. The project took exactly 20 Months to complete.</p>
+        <img src="image23.png" class="img-fluid" alt="Almonds Image 3">
+      </div>
+    </div>
+  </div>
+
+  <div class="container content">
+    <p>Exhibiting the true essence of luxury living is this magnificent, ultra-modern piece of architectural mastery in
+      South C off Ole Shapara Avenue. Anchored within the exquisite quiet surroundings of South C, The Almonds comprises
+      uniquely designed 3&4 Bedroom apartments carefully synchronized to encapsulate luxury living.</p>
+    <img src="image24.png" class="img-fluid" alt="Almonds Image 4">
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="image25.png" class="img-fluid" alt="Almonds Image 5">
+      </div>
+      <div class="col-md-6 content">
+        <h4>RESIDENCY AMENITIES</h4>
+        <ul>
+          <li>Residence lounge</li>
+          <li>Borehole water supply</li>
+          <li>Backup generator</li>
+          <li>CCTV Surveillance System</li>
+          <li>Ample Secure Parking</li>
+          <li>Fully Fitted Gym</li>
+          <li>Solar Hot Water System</li>
+          <li>High-Speed Lift</li>
+          <li>Access Control & Intercom</li>
+          <li>Minimart</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 content">
+        <h4>OOZING CLASS</h4>
+        <p>Discover a canvas that invites you to craft your bold story. These 2 and 3-bedroom luxury residences feature
+          open-plan spaces, carefully considered to ensure convenient everyday living and smooth entertaining.</p>
+      </div>
+      <div class="col-md-6">
+        <img src="image26.png" class="img-fluid" alt="Almonds Image 6">
+      </div>
+    </div>
+  </div>
+
+  <div class="container content">
+    <img src="image27.png" class="img-fluid" alt="Almonds Image 7">
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="image28.png" class="img-fluid" alt="Almonds Image 8">
+      </div>
+      <div class="col-md-6 content">
+        <h4>DARING CHARM</h4>
+        <p>Discover a canvas that invites you to craft your bold story. These 1 and 2 phased luxury residences feature open-plan
+          spaces, carefully considered to ensure convenient everyday living and smooth entertaining.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <form id="contactForm" onsubmit="return validateForm()">
+      <div class="mb-3">
+        <label for="name" class="form-label">Name:</label>
+        <input type="text" id="name" name="name" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email:</label>
+        <input type="email" id="email" name="email" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Message:</label>
+        <textarea id="message" name="message" class="form-control" rows="4" required></textarea>
+      </div>
+      <input type="submit" value="Submit" class="btn btn-primary">
+    </form>
+  </div>
+
+  <footer class="bg-dark text-white mt-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5>RUMAISA HOMES</h5>
+          <p>Suite 38b, 4th Floor, Nextgen Mall<br>
+            Mombasa Rd, Nairobi, KE<br>
+            +254 11 1213333 / +254 11 426 8811<br>
+            <a href="mailto:info@rumaisahomes.co.ke" class="text-light">info@rumaisahomes.co.ke</a>
+          </p>
+        </div>
+        <div class="col-md-4">
+          <h5>EXPLORE</h5>
+          <ul class="list-unstyled">
+            <li><a href="" class="text-light">78platinumresidency</a></li>
+            <li><a href="http://127.0.0.1:5500/zuri2.html" class="text-light">Zuri</a></li>
+            <li><a href="http://127.0.0.1:5500/meraki2.html" class="text-light">Meraki</a></li>
+            <li><a href="http://127.0.0.1:5500/trial.html" class="text-light">The Almonds</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Help & Support</h5>
+          <ul class="list-unstyled">
+            <li>Terms of Service</li>
+            <li>Privacy Policy</li>
+            <li>Cookie Notices</li>
+            <li><a href="http://127.0.0.1:5500/contact2.html" class="text-light">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-md-6">
+          <p class="mb-0">&copy; 2023 Rumaisa Homes. Developed by <a href="https:/fakhrudeen.com/" class="text-light">Fakhrudeen</a></p>
+        </div>
+        <div class="col-md-6 text-end">
+          <a href="#" class="text-light me-2"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-light me-2"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="text-light me-2"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="text-light"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function validateForm() {
+      var name = document.getElementById('name').value;
+      var email = document.getElementById('email').value;
+      var message = document.getElementById('message').value;
+
+      if (name === '' || email === '' || message === '') {
+        alert('Please fill in all fields');
+        return false;
+      }
+
+      var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email)) {
+        alert('Please enter a valid email address');
+        return false;
+      }
+
+      alert('Name: ' + name + '\nEmail: ' + email + '\nMessage: ' + message);
+      return true;
+    }
+  </script>
+
+</body>
+
+</html>

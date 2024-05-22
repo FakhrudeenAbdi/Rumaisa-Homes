@@ -1,3 +1,11 @@
+body{
+   /* overflow-x: hidden; Disable horizontal scrolling */
+   overflow-y: auto;   /* Enable vertical scrolling when necessary */
+   
+
+}
+
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -77,30 +85,25 @@
 
 }
 
-/* .grid{
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  gap: 10px;
-} */
-
-
 
 .nav {
   width: 100%;
   margin-left: 700px;
   justify-content: space-between;
-
-  /* float: left; */
+  padding: 5px 10px;
+  font-size: 14px;
   text-align: right;
   margin-bottom: 0%;
   justify-content: space-between;
   display: flex;
-
+  
+  
 
 }
 
 .nav a{
   color: #14542c;
+  padding: 5px;
   
 
 }
@@ -142,7 +145,7 @@
 }
 
 .p2 {
-  border-color: #14542c;
+  /* border-color: ; */
   color: #14542c;
   background-color: white;
   border-style: solid;
@@ -208,13 +211,191 @@
 }
 
 
-@media(min-width:768px){
-  .container{
-    margin:5px auto 0;
-    padding:4px;
-    border-radius: 2px;
+/* Responsive Styles  */
+@media only screen and (max-width: 600px) {
+  /* Styles for small screens */
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  /* Styles for medium screens */
+}
+
+@media only screen and (min-width: 1025px) {
+  /* Styles for large screens */
+}
+
+
+  @media screen and (max-width: 900px) {
+    .dropdown-content {
+      min-width: 100px;
+    }
+    .dropdown-content a {
+      padding: 8px 12px;
+    }
   }
-  img{
-    border-radius: 2px;
-  }
+
+/* drop down */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  
+  
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color:#14542c;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  background-color:white;
+  color:#e0b44c;
+}
+
+
+.container {
+  display: flex;
+}
+
+.image {
+  flex: 0 0 auto; /* This ensures the image doesn't grow or shrink */
+  margin-right: 20px; /* Adjust as needed for spacing */
+}
+
+
+/* form stlyls */
+
+    form {
+      background-color: antiquewhite;
+      padding: 20px;
+      margin: 20px;
+    }
+    form input[type="text"],
+    form textarea {
+      background-color: #14542c;
+      color: antiquewhite;
+      padding: 10px;
+      margin: 5px 0;
+      border: none;
+      border-radius: 5px;
+      width: 100%;
+    }
+    form input[type="submit"] {
+      background-color: #14542c;
+      color: antiquewhite;
+      padding: 10px 20px;
+      margin-top: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    form input[type="submit"]:hover {
+      background-color: #0d361c;
+    }
+    form label {
+      color: #14542c;
+      margin-bottom: 5px;
+      display: block;
+    }
+  
+
+/* nav bar and responsiveness */
+
+/* Additional CSS for responsiveness and preventing horizontal scrolling */
+body {
+  overflow-x: hidden;
+}
+
+/* Adjust container width and padding for smaller screens */
+@media only screen and (max-width: 768px) {
+.container {
+  width: 90%;
+  padding: 15px;
+}
+}
+
+/* Adjust navigation padding and font size for smaller screens */
+@media only screen and (max-width: 600px) {
+nav {
+  padding: 5px 10px;
+  font-size: 14px;
+}
+nav a {
+  padding: 5px;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav .grid-item1, .nav .grid-item2, .col {
+  display: none;
+}
+.nav .dropbtn {
+  display: block;
+}
+.dropdown-content {
+  position: absolute;
+  display: none;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+}
+
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
 }
